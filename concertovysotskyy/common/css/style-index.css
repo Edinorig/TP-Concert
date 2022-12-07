@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-body {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.ticket-photo {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.ticket-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.ticket-name {
+    margin-left: 30px;
+}
+
+.ticket-group {
+    text-align: end;
+}
+
+.ticket-status {
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+}
