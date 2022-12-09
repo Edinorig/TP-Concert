@@ -43,4 +43,37 @@ section {
     width: 100px;
     height: 30px;
     background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-tikcet-price {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.wrapper-ticket-status {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.ticket-btn {
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-btn:hover {
+    background-color: salmon;
 }
