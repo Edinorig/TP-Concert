@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #272727;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 40px;
+    height: 30px;
+    background: #272727;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+p {
+    color: white;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    flex-direction: column;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.ticket {
+    margin-top: 20px;
+}
+
+.ticket-body {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    align-items: center;
+}
+
+.ticket-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.ticket-name {
+    margin-left: -40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ticket-group {
+    text-align: end;
+}
+
+.wrapper-tikcet-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-ticket-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-btn:hover {
+    background: #656363;
+    color: #D9D9D9;
+}
+
+.wrapper-ticket-status-group {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ticket-data {
+    margin-top: 40px;
+}
+
+.wrapper-price-status {
+    width: 170%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ticket-btn {
+    width: 179px;
+    height: 59px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    border: none;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.ticket-btn-sold {
+    width: 179px;
+    height: 59px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    border: none;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.result-ticket {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.return {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.return:hover {
+    color: #656363;
+}

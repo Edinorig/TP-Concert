@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Nosifer&display=swap');
+.logo {
+    font-family: 'Nosifer';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.09em;
+    color: #864BE7;
+    text-shadow: 4px 2px 5px rgba(83, 12, 199, 0.7);
+}
+
+.text-information {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    /* or 23px */
+    color: #FFFFFF;
+}
+
+.name-ticket {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 0px;
+    /* identical to box height */
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.group-name {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.ticket-number {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.data-ticket {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.ticket-description {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    /* or 23px */
+    color: #FFFFFF;
+}
+
+.price-ticket {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 0px;
+    /* identical to box height */
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.btn-buy {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.btn-sold {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0%;
+    /* identical to box height, or 0px */
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+@media screen and (min-width: 1600px) {
+    .information {
+        margin-top: 353px;
+    }
+    .wrapper-button {
+        margin-top: 190px;
+    }
+    .index-photo {
+        width: 300px;
+        height: 300px;
+    }
+    .text-information {
+        font-size: 35px;
+    }
+    .logo {
+        font-size: 60px;
+    }
+}

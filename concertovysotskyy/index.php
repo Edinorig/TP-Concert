@@ -1,7 +1,3 @@
-<?php
-require_once './config/connect.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,101 +6,45 @@ require_once './config/connect.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./common/css/style-index.css">
-    <title>Shop</title>
+    <link rel="stylesheet" href="./common/css/style-fonts.css">
+    <link rel="stylesheet" href="./common/css/style-animation.css">
+    <link rel="stylesheet" href="./common/css/style.css">
+    <title>Phonk Concert</title>
 </head>
 
 <body>
-    <section>
-        <div class="wrapper-ticket">
-        <?php
-        $datas = mysqli_query($connect, "SELECT * FROM `tconcert`");
-        $datas = mysqli_fetch_all($datas);
-        $btn_id = 1;
-        $id = 1;
-        foreach ($datas as $data) {
-        ?>
-            <div class="ticket">
-                <div class="ticket-name">
-                    <?php
-                    $datas = mysqli_query($connect, "SELECT * FROM `tconcert` where id = $id");
-                    $datas = mysqli_fetch_all($datas);
-                    echo "<pre>";
-                    foreach ($datas as $data) {
-                    ?>
-                        <p><?= $data[1] ?></p>
-                    <?php
-                    }
-                    echo "</pre>";
-                    ?>
-                </div>
-                <div class="ticket-body">
-                    <div class="ticket-photo"></div>
-                    <div class="ticket-description">
-                        <div class="ticket descr">
-                            <?php
-                            $datas = mysqli_query($connect, "SELECT * FROM `tconcert` where id = $id");
-                            $datas = mysqli_fetch_all($datas);
-                            foreach ($datas as $data) {
-                            ?>
-                                <p><?= $data[4] ?></p>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                        <div class="ticket-group">
-                        <?php
-                            $datas = mysqli_query($connect, "SELECT * FROM `tconcert` where id = $id");
-                            $datas = mysqli_fetch_all($datas);
-                            foreach ($datas as $data) {
-                            ?>
-                                <p><?= $data[6] ?></p>
-                            <?php
-                            }
-                            ?>
-                            <p>Trieste band</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper-tikcet-price">
-                    <div class="ticket-price">
-                    <?php
-                            $datas = mysqli_query($connect, "SELECT * FROM `tconcert` where id = $id");
-                            $datas = mysqli_fetch_all($datas);
-                            foreach ($datas as $data) {
-                            ?>
-                                <p><?= $data[5] ?> $</p>
-                            <?php
-                            }
-                            ?>
-                    </div>
-                    <div class="wrapper-ticket-status">
-                    <form action="./config/prenotation.php" method="post">
-                        <div class="ticket-status">
-                        <?php
-                            $datas = mysqli_query($connect, "SELECT * FROM `tconcert` where id = $id");
-                            $datas = mysqli_fetch_all($datas);
-                            foreach ($datas as $data) {
-                            ?>
-                                <input type="number" name="quantity" value="<?= $data[3] ?>">
-                            <?php
-                            }
-                            ?>
-                        </div>
-                        
-                            <button class="ticket-btn" type="submit" name="id" value="<?= $btn_id ?>"  >BUY</button>
-                        </form>
-                        
-                    </div>
-                </div>
 
-            </div>
-            <?php
-            $btn_id += 1;
-            $id += 1;
-        }
-        ?>
+
+
+    <section>
+
+        <div class="wrapper-logo">
+            <p class="logo">PHONK CONCERT</p>
         </div>
+        <div class="wrapper-information">
+            <div class="information">
+                <div class="autoban-sign">
+                    <img class="index-photo" src="./common/img/autoban-sign.svg" alt="">
+                </div>
+                <div class="wrapper-text-information">
+                    <p class="text-information">Lorem Ipsum is simply dummy text of the printing and typesee 1500s.</p>
+                </div>
+                <div class="velocity-sign">
+                    <img class="index-photo" src="./common/img/velocity-sign.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-button">
+            <a class="button" href="./list-ticket-page.php">
+                SEE TICKETS
+            </a>
+        </div>
+
+
     </section>
+
+
+
 </body>
 
 </html>

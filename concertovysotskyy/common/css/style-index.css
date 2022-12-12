@@ -4,76 +4,76 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background: #272727;
 }
 
-section {
+a {
+    text-decoration: none;
+}
+
+.wrapper-logo {
     display: flex;
     justify-content: center;
+    margin-top: 79px;
 }
 
-.ticket-body {
+.wrapper-text-information {
+    width: 603px;
+    height: 92px;
+}
+
+.information {
     display: flex;
-    justify-content: space-around;
-    width: 800px;
+    justify-content: space-evenly;
+    margin-top: 200px;
 }
 
-.ticket-photo {
-    width: 200px;
-    height: 200px;
-    background-color: aquamarine;
-}
-
-.ticket-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 500px;
-}
-
-.ticket-name {
-    margin-left: 30px;
-}
-
-.ticket-group {
-    text-align: end;
-}
-
-.ticket-status {
-    width: 100px;
-    height: 30px;
-    background-color: aqua;
+.button {
+    width: 362px;
+    height: 80px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.wrapper-tikcet-price {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 100%;
+    /* identical to box height, or 23px */
     display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
     align-items: center;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
 
-.wrapper-ticket-status {
-    display: flex;
-    justify-content: space-between;
-    width: 220px;
-}
-
-.ticket-btn {
-    width: 100px;
-    height: 30px;
-    background-color: aqua;
+.button:hover {
+    color: #864BE7;
+    border: 1.5px solid #864BE7;
+    box-shadow: 0px 2px 10px 4px #864BE7;
     border-radius: 10px;
+}
+
+.wrapper-button {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 100px;
 }
 
-.ticket-btn:hover {
-    background-color: salmon;
+@media screen and (min-width: 1600px) {
+    .information {
+        margin-top: 353px;
+    }
+    .wrapper-button {
+        margin-top: 190px;
+    }
+    .index-photo {
+        width: 250px;
+        height: 250px;
+    }
+    .button {
+        width: 501px;
+        height: 128px;
+    }
 }
